@@ -1,0 +1,23 @@
+{
+  "skill_name": "paper-builder",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to write a LaTeX paper for ICML about my new graph neural network architecture for protein binding site prediction. I used the PDBbind dataset and my model outperforms GCN and GAT on both RMSE and MAE metrics.",
+      "expected_output": "Agent greets user, explains what it can do, starts Step 1 by asking for research background/model/datasets/conclusions. Does NOT generate full paper or LaTeX code beyond the greeting.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Can you help me write up my research? I've been working on some experiments with diffusion models for time series forecasting and I have results but I'm not sure how to structure the paper.",
+      "expected_output": "Agent greets user, explains what it can do, starts Step 1 by asking for research background/model/datasets/conclusions. Proactively extracts the mentioned topics (diffusion models, time series forecasting). Does NOT jump to generating paper content.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I already have my introduction and related work written, but I need help drafting the Methods and Experiments sections of my paper on efficient vision transformers for edge deployment. I tested on ImageNet-1K and COCO.",
+      "expected_output": "Agent greets user, explains what it can do, starts Step 1 by asking for remaining research information. Acknowledges the user has intro/related work but still follows the step-by-step workflow from the beginning. Does NOT skip to Method/Experiments section.",
+      "files": []
+    }
+  ]
+}
